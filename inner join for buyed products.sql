@@ -1,1 +1,0 @@
-select Client.Name as 'Имя клиента', Product.Name as 'Продукт', Product.Price 'Цена' from [dbo].[BuyedProducts] inner join [dbo].[Client] on [Client_ID] = [ID_Client] inner join [dbo].[Product] on [Product_ID] = [ID_Product]
