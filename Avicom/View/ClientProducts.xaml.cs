@@ -10,19 +10,22 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Avicom.ViewModel;
 
-namespace Avicom
+
+namespace Avicom.View
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для CustomerProducts.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ClientProducts : Window
     {
-        public MainWindow()
+        public ClientProducts(Client client)
         {
             InitializeComponent();
+            DataContext = new ClientProductsViewModel(client);
+
         }
     }
 }

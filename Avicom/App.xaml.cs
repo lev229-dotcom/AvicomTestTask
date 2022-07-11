@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
+using Avicom.View;
 
 namespace Avicom
 {
@@ -13,5 +8,13 @@ namespace Avicom
     /// </summary>
     public partial class App : Application
     {
+
+        public App()
+        {
+            MainWindow window = new MainWindow();
+
+
+            window.Show();
+        }
     }
 }
