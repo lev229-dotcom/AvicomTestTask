@@ -31,7 +31,7 @@ namespace Avicom.ViewModel
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=LAPTOP-3SOVKD2O;Initial Catalog=Avicom;Integrated Security=True;");
+            optionsBuilder.UseSqlServer("Data Source=/*Ваше имя сервера*/;Initial Catalog=Avicom;Integrated Security=True;");
         }
 
         
